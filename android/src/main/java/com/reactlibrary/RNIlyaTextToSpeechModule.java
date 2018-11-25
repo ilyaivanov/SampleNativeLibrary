@@ -19,4 +19,9 @@ public class RNIlyaTextToSpeechModule extends ReactContextBaseJavaModule {
   public String getName() {
     return "RNIlyaTextToSpeech";
   }
+
+  @ReactMethod
+  public void greetFromNative(Callback callback){
+    callback.invoke("Hello from Java");
+  }
 }
