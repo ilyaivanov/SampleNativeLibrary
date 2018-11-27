@@ -9,5 +9,12 @@
 }
 RCT_EXPORT_MODULE()
 
+RCT_EXPORT_METHOD(greetFromNative:(RCTResponseSenderBlock)callback)
+{
+    NSString * const MyExampleNotification = @"Greeting from iOS Native";
+    callback(@[MyExampleNotification]);
+}
+
 @end
   
+ 
